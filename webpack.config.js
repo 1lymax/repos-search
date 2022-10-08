@@ -4,6 +4,7 @@ const HTMLWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
 	mode: "development",
+	devtool: 'eval-source-map',
 	entry: ["@babel/polyfill", "./src/index.jsx"],
 	output: {
 		path: path.resolve(__dirname, "dist"),
@@ -16,6 +17,9 @@ module.exports = {
 		new HTMLWebpackPlugin({template: "./src/index.html"}),
 		new CleanWebpackPlugin()
 	],
+	resolve: {
+		extensions: ['.js', '.jsx'],
+	},
 	module: {
 		rules: [
 			{
