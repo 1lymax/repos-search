@@ -43,8 +43,7 @@ const Main = () => {
 	return (
 		<Container fixed>
 			<Paper
-				component="form"
-				sx={{ p: '2px 4px', marginBottom: '15px', display: 'flex', alignItems: 'center'}}
+				sx={{ p: '2px 4px', margin: '30px 0px 30px 0px', display: 'flex', alignItems: 'center'}}
 			>
 				<InputBase
 					sx={{ ml: 1, flex: 1 }}
